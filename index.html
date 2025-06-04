@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet-Friendly City Campaign</title>
+    <!-- Google Fonts for Fun Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Styles -->
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home 🏠</a></li>
+      <li><a href="#about">About 🐾</a></li>
+      <li><a href="#volunteer">Volunteer 🤝</a></li>
+      <li><a href="#impact">Impact Stories 🌟</a></li>
+      <li><a href="#contact">Contact 📧</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- <img src="https://masterbundles.com/wp-content/uploads/edd/2023/02/ai-generated-dog-832.png" alt="My_Pet" style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: var(--shadow); background: rgba(255, 255, 255, 0.8);"> -->
+    <h1>Making Cities Paw-some! 🐾✨</h1>
+    <p>Join the movement to create pet-friendly spaces, one city at a time. Let's make tails wag and hearts happy!</p>
+    <button class="cta-btn" onclick="scrollToSection('volunteer')">Join the Movement</button>
+    <button class="cta-btn" onclick="scrollToSection('volunteer')">Volunteer Now</button>
+    <button class="cta-btn" onclick="scrollToSection('about')">Learn More</button>
+  </section>
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <h2>About the Campaign 🐶🐱</h2>
+    <p>
+      The <strong>Pet-Friendly City Campaign</strong> is a grassroots initiative dedicated to transforming urban spaces into welcoming environments for pets and their humans. <span aria-label="paw" role="img">🐾</span>
+    </p>
+    <p>
+      Our mission is to advocate for more pet parks, promote responsible pet ownership, and foster a sense of community among animal lovers. From organizing clean-up drives to hosting adoption events, we believe every city can be a happier, healthier place for our furry friends. <span aria-label="city" role="img">🏙️</span>
+    </p>
+    <p>
+      Whether you're a lifelong pet parent or simply an animal admirer, your passion and energy can help us make a difference. <span aria-label="sparkles" role="img">✨</span>
+    </p>
+  </section>
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Volunteer Form -->
+    <form class="volunteer-form" id="volunteer" autocomplete="off">
+      <h2>Volunteer Sign-Up 📝</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <label for="city">City</label>
+      <input type="text" id="city" placeholder="Your City" required>
+      <label for="role">Role Preference</label>
+      <select id="role" required>
+        <option value="">Select a Role</option>
+        <option>Event Organizer</option>
+        <option>Pet Care Volunteer</option>
+        <option>Social Media Ambassador</option>
+        <option>Fundraiser</option>
+      </select>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <button type="submit">Sign Up 🐶</button>
+    </form>
+    <!-- Impact Stories -->
+    <section class="impact-stories" id="impact">
+      <h2>Impact Stories 🌟</h2>
+      <div class="story">
+        <span class="story-emoji">🐶</span>
+        <div class="story-content">
+          <div class="story-title">Max's New Park</div>
+          <div class="story-desc">Thanks to our volunteers, Max and his friends now have a safe, clean park to play in every weekend!</div>
+        </div>
+      </div>
+      <div class="story">
+        <span class="story-emoji">🐱</span>
+        <div class="story-content">
+          <div class="story-title">Whiskers Finds a Home</div>
+          <div class="story-desc">Our adoption drive helped Whiskers find a loving family. Now, she's the queen of her castle!</div>
+        </div>
+      </div>
+      <div class="story">
+        <span class="story-emoji">🐾</span>
+        <div class="story-content">
+          <div class="story-title">Community Clean-Up</div>
+          <div class="story-desc">Over 50 volunteers joined paws to clean city sidewalks, making strolls safer for pets and people alike.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Pet Adoption Carousel -->
+  <section class="pet-carousel">
+    <h2>Adoptable Pets Carousel 🐾</h2>
+    <div class="carousel-wrapper" id="carousel">
+      <!-- Pet Cards will be injected here by JS -->
+    </div>
+    <button class="carousel-btn" onclick="prevPet()" aria-label="Previous pet">&#8592;</button>
+    <button class="carousel-btn" onclick="nextPet()" aria-label="Next pet">&#8594;</button>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us 📧</h2>
+    <div class="contact-details">
+      <div><strong>Email:</strong> <a href="mailto:mail@collegetips.in">mail@collegetips/pet-friendly_campaign.in</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+91 7024577333"> +91 7024577333</a></div>
+      <div><strong>Address:</strong> Sector-360, Noida, India</div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/collegetips.in/" target="_blank" title="Facebook">🐾</a>
+      <a href="https://www.instagram.com/collegetips.in/" target="_blank" title="Instagram">📸</a>
+      <a href="https://x.com/CollegeTips_in" target="_blank" title="Twitter">🐦</a>
+      <a href="https://www.youtube.com/channel/UCcbf5sZkxsBGYj9Dr7K9QEA" target="_blank" title="YouTube">
+        <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="" style="width:50px; height:30px;">
+          <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
